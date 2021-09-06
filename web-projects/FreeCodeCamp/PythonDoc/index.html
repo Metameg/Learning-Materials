@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style/PythonDoc.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Python Basics</header>
+        <ul>
+          <li><a class="nav-link" href="#Introduction">
+            Introduction</a>
+          <li><a class="nav-link" href="#First_Program">
+            First Program</a>
+          <li><a class="nav-link" href="#Conditional_Statements">
+            Conditional Statements</a>
+          <li><a class="nav-link" href="#Loops">
+            Loops</a>
+          <li><a class="nav-link" href="#Summary">
+            Summary</a>
+      </nav>  
+        
+      <main id="main-doc">
+        <section class="main-section" id="Introduction">
+          <header>Introduction</header>
+          <article>
+          <p>Python is widely regarded as a perfect language for beginners to get their feet wet in the world of programming. Its syntax is purposefully designed to be very human-readable, which makes it a great language to begin learning the basics of programming.</p>
+          
+          <p> Don't be fooled though, Python is used extensively by major tech companies. Though it is a great language for beginners to learn, it certainly is not limited to only beginner programmers. </p>
+            
+          <p>This article will assume that the reader has  absolutely no exxperience programming with Python. The intention of this article is to familiarize the reader with basic programming principles using the Python language. This article also assumes that you already have a working version of python installed on your computer. </p>
+          </article>
+        </section>
+        
+        <section class="main-section" id="First_Program">
+          <header>First Program</header>
+          <article>
+            <p> We will start by creating a basic Hello World program. This program will simply print out a message on the console that says 'Hello World!' Right off the bat, this basic program will show just how easy Python is to use compared to some other languages that you may or may not have come across. </p>
+            
+            <p> To write this program, really only one line of code is neccessary: 
+            <code>print("Hello World!")</code></p>
+            
+            <p>As you can see, this is fairly simple as Python does not require anything special for basic input/output to be generated. Also, this program begins to demonstrate how closely related python can be to the English language itself. Next we will move on to some slightly more complicated programs, which will further demonstrate Python's easy to read style.</p>
+          </article>
+        </section>
+        
+        <section class="main-section" id="Conditional_Statements">
+          <header>Conditional Statements</header>
+          <article>
+            <p>To make our program do a little bit of"thinking", we will introduce some conditionals. A conditional statement integrates concepts of decision branching into our programs. In Python, we can do this using if...else statements.</p>
+            
+            <p> The syntax in Python for if...else statements looks like this:
+              <code> if (condition):
+                &nbsp&nbsp your code...
+                
+                     else:
+                &nbsp&nbsp your code...  
+              </code></p>
+            
+            <p> The initial if statement will test a condition and execute the code within the block of the if statement if the condition evaluates to true. If the conditional expression evaluates to false, the else statement is executed. For example:
+              <code>num1=3
+                    num2=5
+              
+                    if (num2 > num1):
+                    &nbsp&nbsp print("num2 is greater than num1")
+                    
+                    else:
+                    &nbsp&nbsp print("num2 is less than or equal to num1")
+              </code>
+            <em class="caption"> Note that when writing blocks of code in Python, whether it be within a conditional, loop, function, etc. indentation matters. Python uses indentation to determine whether or not a line of code is considered a part of a larger block of code, and not using consistent indentation could result in either compiler or logical errors.</em> </p>
+            
+            <p>The above code initializes two variables, num1 and num2, and  sets their values to 3 and 5 respectively. The conditional expression num2 > num1 asks if num2 is greater than num1. Since this is true (5>3), the code within the if statement is executed. In this case it prints the message stating that num2 is greater than num1. Note that switching either the values of num1 and num2 or changing the conditional expression so that it evaluates to false would force the else statement to execute. There are many different operands that can be used in conditional expressions. Below are the most common.
+              <ul class="article-list">
+                <li>> &nbsp(greater than)</li>
+                <li> < &nbsp(less than)</li>
+                <li>>= &nbsp(greater than or equal to)</li>
+                <li> <= &nbsp(less than or equal to)</li>
+                <li>== &nbsp(equal to)</li>
+                <li>!= &nbsp(not equal to)</li>
+            </ul></p>
+          
+          <p>Note that inn Python, these operands are not limited to variables of type int, but can be used on other variable types such as strings and characters, however when comparing these types, the compiler uses unicode values to determine a characters numeric value, so using operands such as <, >, <=, or >= should be avoided when comparing types other than int. It is also important to note that in Python, variable types are automatically determined by the compiler, so declaring that a variable is of type int, string, char, etc. is unnecessary during initialization.</p>
+            
+          <p>This if...else structure can be expanded to include an elif statement as well. The elif comes in between the if...else statement and can be used to evaluate a condition that would be seperate from the if and else statments. Expanding from the previous example will demonstrate this.
+            <code>num1 = 3
+                  num2 = 5
+              
+                  if (num2 > num1 + 2):
+                    &nbsp&nbsp print("num2 is much greater than num1")
+                  elif (num2 > num1 + 1):
+                    &nbsp&nbsp print("num2 is slightly greater than num1")
+                  else:
+              &nbsp&nbsp print("num2 is less than or equal to num1")</code></p>
+                
+          <p>In this case, the conditional expression in the initial if statement is false, so the compiler moves to test the conditional in the elif statement, which in this case evaluates to true, so the code located in the block within the elif statement is executed.</p>
+            </article>
+        </section>
+        
+        <section class="main-section" id="Loops">
+          <header>Loops</header>
+          <article>
+            <p>Next we will discuss the basic behaviors and syntax of loops in Python. There are two types of loops that we will be using, while loops and for loops.
+           
+            <h2>While Loops</h2> 
+            <p>A while loop is used when we want to loop back through code given that a conditional expression is true. Here is an example:
+              <code>running = 'y'
+                
+                    while (running == 'y'):
+                    &nbsp&nbsp print("Running Loop...")
+                    &nbsp&nbsp running = input("Do you wish to continue running the loop?")
+                
+                print("Exiting")</code></p>
+              
+              <p> The above code initializes the variable running to the character 'y' which initially sets the conditional expression that loop checks to true, starting the loop. While the loop is running, the 'running' variable is continuosly reset to a user input value. If the user enters anything other than 'y', the loop is exited and the 'Exiting' message is printed. </p>
+            
+            <h2>For Loops</h2>
+            <p> We use for loops when we want to execute a loop a specefic number of times. Though this can be accomplished using a while loop, for loops have special features that makes the code more comprehensible and ultimately produces less lines of code. Here is a basic example of a for loop:
+              <code>for i in range(6):
+                &nbsp&nbsp print("i's current value: ", i)</code></p>
+            
+            <p>The above code increments variable i and prints its value everytime the program runs through the loop. The starting and stopping values of i is determined by the range function. This function simply takes in either 1 or 2 integer values as its parameters, and generates a range of numbers starting from the first parameter ranging to the second parameter. The default step size is 1, unless a third parameter is used. In this example, only one parameter is used, so the default starting point (0) is initially set to the variable i, and will increment by one six times. So range(6) represents the numbers 0,1,2,3,4,5. This can be seen when running the above code as i will initiially be set to 0 and the final iteration of the loop will occur when i=5, at which point the loop is exited.</p>
+          </article>
+        </section> 
+        
+        <section class="main-section" id="Summary">
+          <header>Summary</header>
+          
+          <article>
+            <p>After reading through these basic Python principles, hopefully you have a clearer picture of how the syntax in Python is aimed to optimize readability. It is important to realize that there are many, many more in depth articles that better explain the inticacies of Python and that Python has many more advanced concepts and usability. Again the purpose of this article was just to get your feet wet with some of the basic syntax that is commonly used in Python. </p>
+            
+            <p>Happy programming!</p>
+      </main>
+          
+      
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

@@ -1,0 +1,75 @@
+header {
+    font-size: 1.85em;
+    text-align: center;
+    margin: 1.2em 0;
+  }
+  
+  h2 {
+    font-weight: 10;
+    margin: 1.2em 2em;
+  }
+  #navbar {
+    position: fixed;
+    min-width: 350px;
+    height: 100%;
+    border-right: 4px solid #969593;
+    overflow-x: hidden;
+  }
+  
+  #navbar li {
+    list-style: none;
+    width: 100%;
+    padding: 20px;
+    border-top: 2px solid #cccccc; 
+  }
+  
+  .nav-link {
+    font-size: 1.25em;
+    text-decoration: none;
+    color: black;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #navbar {
+      display: flex;
+      flex-direction: column;
+    }
+    #navbar ul {
+      border: 1px solid;
+      height: 500px;
+    }
+  }
+  #main-doc {
+    position: absolute;
+    left: 400px;
+    top: 55px;
+  }
+  
+  #main-doc header {
+    text-align: left;
+  }
+  
+  #main-doc p {
+    font-size: 1.1em;
+    margin: 1em 5.5em;
+  }
+  
+  code {
+    display: block;
+    width: 80%;
+    margin: 1em 2.5em;
+    padding: 1em;
+    white-space: pre-line;
+    background-color: #cccccc;
+  }
+  
+  .caption {
+    display: block;
+    text-align: center;
+  }
+  
+  .article-list{
+    margin: 2em 5.5em;
+    list-style: square inside;
+  }
