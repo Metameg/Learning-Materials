@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&family=Uchen&display=swap');
+
+ html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 3em;   
+  font-family: 'Uchen', sans-serif;
+  box-shadow: 0px 10px;
+}
+
+h2 {
+  font-size: 3.2em;
+  font-family: 'Uchen', sans-serif;
+}
+
+p{
+  font-family: 'raleway', sans-serif;
+  color: #424242;
+  font-weight: bold;
+}
+
+li {
+  list-style: none;
+}
+
+#navbar {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(179, 181, 65, 0.9);
+  z-index: 1;
+}
+
+.nav-list {
+  display: flex; 
+  align-items: center;
+  top: 0;
+  margin: 0 50px;
+  height: 100%;
+}
+
+.nav-list a{
+  display: block;
+  color: #424242;
+  font-size: 1.65em;
+  margin-right: 50px;
+  padding: 1em;
+  text-decoration: none;
+}
+
+.nav-list a:hover {
+  background-color: #948c7e;
+  opacity: 0.6;
+}
+
+#welcome-section  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.85em;
+  width: 100%;
+  height: 100vh;
+}
+
+#projects {
+  display: block;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: rgba(181, 177, 150, 1);
+}
+
+.project-grid {
+  display: grid;  
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  width: 100%;
+}
+
+.project-tile {
+  position: relative;
+  margin: 30px;
+  width: 330px;
+  height: 350px;
+  border: solid 2px white;
+  border-radius: 5px;
+}
+
+.project-tile img {
+  width: 100%;
+  height: 85%;
+  object-fit: cover; 
+}
+
+.project-tile:hover{
+  width: calc(330px + 10%);
+  height: calc(350px + 5%);
+  transition-duration: 0.25s;
+}
+
+.project-link {
+  text-decoration: none; 
+}
+
+.project-title {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  height: 15%;
+  background-color: #787769;
+}
+
+.project-title span{
+  align-self: flex-end;
+  color: #fffce6;
+  font-size: 1.45em;
+  margin-bottom: 15px;
+}
+
+.project-title span:hover {
+  color: #003c87;
+}
+
+#contact {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 75px 0;
+}
+
+.contact-link {
+  font-family: 'raleway';
+  text-decoration: none;
+  color: #424242;
+  font-weight: bold; 
+  margin: 0 50px;
+}
+
+.contact-link:hover {
+  color: #003c87;
+}
+
+@media (max-width: 950px) {
+  #contact h2 {
+    font-size: 2.5em;
+  }
+  
+  .contact-link {
+    font-size: 1.1em;
+  }
+  
+  #navbar {
+    height: 20vh;
+  }
+}
+  
