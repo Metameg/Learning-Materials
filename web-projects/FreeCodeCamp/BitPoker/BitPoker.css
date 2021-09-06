@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital@1&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #cccccc
+}
+
+p {
+  margin-left: -450px;
+}
+
+h1 {
+  margin-left: -75px;
+}
+
+#header {
+  display: flex;
+  top: 0;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 150px;
+}
+
+#logo {
+  font-family: 'Arimo', sans-serif;
+  margin-left: 40px;
+  font-size: 4em;
+  color: green;
+}
+
+#header-img {
+  width: 100px; 
+}
+
+#nav-bar {
+  position: fixed;
+  left: 700px;
+  height: 70px;
+  background-color: #6b0404;
+  border-radius: 15px;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+@media (max-width: 1000px) {
+  #logo {
+    font-size: 2em;
+  }
+}
+
+li {
+  list-style: none; 
+}
+
+.nav-link{
+  margin: 100px;
+  font-size: 1.3em;
+  color: white;
+  text-decoration: none;
+  
+}
+
+nav > ul {
+  display: flex;
+  margin-right: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 50px; 
+   
+}
+
+#main {
+  font-size: 32px;
+  margin: -50px 400px;
+}
+
+#video {
+  margin-left: -75px;
+}
+
+.main-btn {
+  width: 250px;
+  height: 75px;
+  margin: 75px 0 0 25px;
+  box-shadow: 3px 10px 18px 0 #6b0404; 
+  border-radius: 25px;
+  background-color: #a38b12;
+  color: white;
+}
+
+.main-btn:hover {
+  cursor: pointer;
+}
+
+.btn {
+  width: 100px;
+  height: 35px;
+  margin-left: 75px;
+  background-color: #a38b12;
+  border-radius: 15px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  height: 375px;
+  padding: 25px;
+  background-color: #6b0404;
+  color: white;
+}
+
+.input-field {
+  margin: 25px;
+  min-width: 200px;
+  min-height: 1.7em;
+  border-radius: 10px;
+}
+
+.input-field:focus {
+  border-color: #a38b12;
+  outline: 0;
+  box-shadow: 0 0 0 1px #a38b12 ;
+}
+
+.login-link{
+  color: white;
+  text-decoration: none; 
+}
+
+.login-link:hover{
+  color: #3cddfa;  
+}
+
+#content-wrapper {
+  margin: 0 auto;
+  position: absolute;
+  top: 700px;
+  width: 100%;
+  
+}
+
+#deposit{
+  margin-left: 575px;
+}
+
+.content-text {
+  margin-left: 150px;
+  padding: 0 35px;
+  margin-top: 55px;
+  font-size: 20px;
+}
+
+#windows-dwnld {
+  margin-left: 450px;
+}
+
+#learn-link {
+  margin-left: 375px;
+}
