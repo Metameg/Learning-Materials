@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style/BitPoker.css">
+</head>
+
+<body>
+    <header id="header">
+        <div id="logo">
+          BitPoker
+          <img  id="header-img" 
+                src= "https://previews.123rf.com/images/kilroy79/kilroy791607/kilroy79160700107/59667660-casino-chip-logo-black-poker-chip-with-card-suits-symbols-.jpg"
+              alt="Poker Chip Logo"> 
+        </div>
+        
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#deposit">Deposit</a></li>
+            <li><a class="nav-link" href="#download">Download</a></li>
+            <li><a class="nav-link" href="#learn">Learn</a></li>
+        </nav>
+      </header>
+      
+      <div class="container">
+        <form id="form" action="https://www.freecodecamp.com/email-submit" >
+          <label>Username/Email:</label>
+            <input name="email"
+                   type="email" 
+                   id="email"
+                   class="input-field"
+                   placeholder="Enter username or email address"
+                   required
+            />
+        
+           <label>Password:</label>
+            <input type="text" 
+                   class="input-field"
+                   placeholder="Enter your password"
+            />
+           
+          <input id="submit" class="btn" type="submit" value="Login"/>
+          <p><a href="#" class="login-link">Forgot Username?</a></p>
+          <p><a href="#" class="login-link">Forgot Password?</a></p>
+        </form>
+        
+        
+        <section id="main">
+          <h1>Play. Win. Cash Out. Repeat</h1>
+          <iframe
+            id="video"
+            src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+            height="400"
+            width="500"
+            allowfullscreen
+                  ></iframe>
+      
+        </section>
+        <section id="content-wrapper">
+          <section id="deposit">
+            <button class="main-btn"        >Deposit</button>
+          </section>
+            <p class="content-text"> Click the link above to deposit onto the world's greatest online poker site! Don't have the client installed yet? Just click the approprite Download button below to begin install.
+          
+          <section id="download">
+            <button id="windows-dwnld" class="main-btn">Download (Windows 10)</button> 
+          
+            <button id="mac-dwnld" class="main-btn">Download (MacOS)</button> 
+          </section>
+          
+          
+          <section id="learn">
+            <p class="content-text"> Click the link below to begin learning about how to get started playing poker and how the game works. <br>
+            <a id="learn-link" href="#"> How to play</a></p>
+             
+          </section>
+        </section>
+        
+      </div>  
+        
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
