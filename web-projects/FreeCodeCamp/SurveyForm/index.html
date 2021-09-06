@@ -1,0 +1,167 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style/SurveyForm.css">
+</head>
+
+<body>
+   <header class="header"> 
+        <h1 id="title" class="header-text">
+        Coding Project Example Survey Form
+        </h1>
+        <p id="description" class="header-text">
+        Just a     simple Survey Form to make sure  I understand the concepts
+        </p>
+    </header>
+    
+    
+    <form id="survey-form">
+        <div class="form-group">
+        <label id="name-label"                      for="name">
+        Name</label>
+        <input 
+            type="text"
+            id="name"
+            class="text-box"
+            placeholder="Enter your name"
+            required
+        />
+        </div>
+        
+        <div class="form-group">
+        <label id="email-label"                      for="email">
+        Email</label>
+        <input 
+            type="email"
+            id="email"
+            class="text-box"
+            placeholder="Enter your email"
+            required
+        />
+        </div>
+        
+        <div class="form-group">
+        <label id="number-label"                      for="number">
+        Favorite Number</label>
+        <input 
+            type="number"
+            id="number"
+            class="text-box"
+            placeholder="Favorite Number"
+            min="0"
+            max="1,000,000"
+        />
+        </div>
+        
+        <div class="form-group">
+        <p> What timezone were you born in?          </p>
+        <select id="dropdown" class="text-box"  required>
+            <option disable selected value>
+            Select timezone </option>
+            <option value="Eastern">Eastern (ET) 
+            </option>
+            <option value="Central">Central 
+            </option>
+            <option value="Mountain">Mountain 
+            </option>
+            <option value="Pacific">Pacific (PT) 
+            </option> 
+        </select>
+        </div> 
+        
+        <div class="form-group">
+        <p> Are you a dog person or a cat person?
+        </p>
+        
+        <label>
+            <input 
+            name="dog-or-cat"
+            value="dog"
+            type="radio"
+            class="input-radio"
+            />&nbsp &nbsp Dog <br>
+        </label>
+        
+        <label>
+            <input 
+            name="dog-or-cat"
+            value="cat"
+            type="radio"
+            class="input-radio"
+            />&nbsp &nbsp Cat <br>
+        </label>
+        
+        <label>
+            <input 
+            name="dog-or-cat"
+            value="neither"
+            type="radio"
+            class="input-radio"
+            />&nbsp &nbsp Neither
+        </label>
+        </div>
+        
+        <div class="form-group">
+        <p>Check any hobbies that you have</p>
+        
+        <label>
+            <input
+            name="hobbies"
+            value="drawing"
+            type="checkbox"
+            class="input-checkbox"
+            />Drawing <br>
+        </label>
+        
+        <label>
+            <input
+            name="hobbies"
+            value="writing"
+            type="checkbox"
+            class="input-checkbox"
+            />Writing <br>
+        </label>
+        
+        <label>
+            <input
+            name="hobbies"
+            value="photography"
+            type="checkbox"
+            class="input-checkbox"
+            />Photography <br>
+        </label>
+        
+        <label>
+            <input
+            name="hobbies"
+            value="sports"
+            type="checkbox"
+            class="input-checkbox"
+            />Sports <br>
+        </label>
+        
+        <label>
+            <input
+            name="hobbies"
+            value="coding"
+            type="checkbox"
+            class="input-checkbox"
+            />Coding <br>
+        </label>
+        </div>
+        
+        <div class = "form-group">
+        <p> Write a creative sentence</p>
+        
+        <textarea
+            id="creative-sentence"
+            placeholder="Write your sentence here..."
+        ></textarea>
+        </div>
+            
+        <button id="submit">Submit</button>
+        
+    </form>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>  
