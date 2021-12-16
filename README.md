@@ -4,4 +4,4 @@ No real direction here. Used mostly as a learning tool.
 
 -----For CS-230 Portfolio Assignment------
 
-The path to my Design Document within this repository is 
+The path to my Design Document within this repository is random-stuff/schoolwork/Java/GameAuth/CS-230 the Gaming Room Software Design Document.docx
