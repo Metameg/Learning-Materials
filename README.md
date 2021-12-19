@@ -3,4 +3,6 @@ A bunch of random stuff created for different katas, classwork, etc. Essentially
 
 -----For CS-230 Portfolio Assignment------
 
-The path to my Design Document within this repository is Learning-Materials/schoolwork/Java/GameAuth/CS-230 the Gaming Room Software Design Document.docx
+The path to my Design Document within this repository is Learning-Materials/schoolwork/Java/GameAuth/CS+230+The+Gaming+Room+Software+Design.pdf
+
+
