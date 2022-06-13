@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style/holan-homes.css">
+	<script src="scripts/maps.js"></script>
+</head>
+
+<body>
+
+	<div id="logo-container">
+	  <img src="attachments/holan-homes-logo.PNG">
+	</div>
+
+	  <!-- Slideshow container -->
+	<div class="slideshow-container">
+
+	  <!-- Full-width images with number and caption text -->
+	  <div class="mySlides fade">
+		<img src="https://images1.apartments.com/i2/sVDHvBwOXH5rRmHPFAR76PPWRx7lUaWfbOABOyKxopo/111/5210-claremont-st-houston-tx-primary-photo.jpg?p=1" alt="Primary Photo - 5210 Claremont St" />
+		<div class="text"><a href="https://www.apartments.com/5210-claremont-st-houston-tx/0n3kt02/" target="to_blank">
+							5210 Claremont St, Houston, TX, 77023</a></div>
+	  </div>
+
+	  <div class="mySlides fade">
+		<img src="https://images1.apartments.com/i2/-ctoR0pO4BdIB9YZxt-iWih9ITeP_9CEQ1UK5D-UdpY/111/2610-southmore-blvd-houston-tx-primary-photo.jpg?p=1" alt="Primary Photo - 2610 Southmore Blvd" />
+		<div class="text"><a href="https://www.apartments.com/2610-southmore-blvd-houston-tx/w1vp9ph/" target="to_blank">
+							2610 Southmore Blvd., Houston, TX, 77004</a></div>
+	  </div>
+
+	  <div class="mySlides fade">
+		<img src="https://ssl.cdn-redfin.com/photo/104/bigphoto/489/17440489_1.jpg" >
+		<div class="text"><a href="https://www.har.com/homedetail/2119-freeman-st-houston-tx-77009/11496307" target="to_blank">
+							2119 Freeman St., Houston, TX, 77009</a></div>
+	  </div>
+
+	  <div class="mySlides fade">
+		<img src="https://ap.rdcpix.com/276665987/e391d65537a0aeaf92fa1598bb0b2e78l-m0xd-w1020_h770_q80.jpg" >
+		<div class="text"><a href="https://www.realtor.com/realestateandhomes-detail/111-Harris-Ct_Houston_TX_77009_M84027-39024" target="to_blank">
+							111 Harris Ct., Houston, TX, 77009</a></div>
+	  </div>
+
+	  <div class="mySlides fade">
+		<img src="https://ap.rdcpix.com/95d0e7fbc15bede8e7cad78edc3ecd87l-m985408867xd-w1020_h770_q80.jpg" >
+		<div class="text"><a href="https://www.har.com/homedetail/109-harris-ct-houston-tx-77009/11967121" target="to_blank">
+							109 Harris Ct., Houston, TX, 77009</a></div>
+	  </div>
+
+	  <div class="mySlides fade">
+		<img src="https://ap.rdcpix.com/83b01756338dc856c8734a58582bf493l-m200696848xd-w1020_h770_q80.jpg" >
+		<div class="text"><a href="https://www.realtor.com/realestateandhomes-detail/2017-Marion-St_Houston_TX_77009_M85519-06277" target="to_blank">
+							2017 Marrion St, Houston, TX, 77009</a></div>
+	  </div>
+
+	  <!-- Next and previous buttons -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+
+	<script src="scripts/slide.js"></script>
+
+  <!-- navbar with drop down menus -->
+  <div class="navbar">
+
+	<div class="dropdown">
+	  <button class="dropbtn">For Sale</button>
+	  <div class="dropdown-content">
+		<a href="https://www.apartments.com/5210-claremont-st-houston-tx/0n3kt02/" target="to_blank">5210 Claremont St.</a>
+		<a href="https://www.apartments.com/2610-southmore-blvd-houston-tx/w1vp9ph/" target="to_blank">2610 Southmore Blvd.</a>
+		<a href="https://www.har.com/homedetail/2119-freeman-st-houston-tx-77009/11496307" target="to_blank">2119 Freeman St.</a>
+		<a href="https://www.realtor.com/realestateandhomes-detail/111-Harris-Ct_Houston_TX_77009_M84027-39024" target="to_blank">111 Harris Ct.</a>
+		<a href="https://www.har.com/homedetail/109-harris-ct-houston-tx-77009/11967121" target="to_blank">109 Harris Ct.</a>
+		<a href="https://www.realtor.com/realestateandhomes-detail/2017-Marion-St_Houston_TX_77009_M85519-06277" target="to_blank">2017 Marrion St.</a>
+	  </div>
+	</div>
+
+	<div class="dropdown">
+	  <button class="dropbtn">Pricing</button>
+ 	  <div class="dropdown-content">
+		<a href="#">Link 1</a>
+		<a href="#">Link 2</a>
+		<a href="#">Link 3</a>
+	  </div>
+	</div>
+
+	<div class="dropdown">
+	  <button class="dropbtn"><a href="#">Request Maintenance</a></button>
+	</div>
+
+  </div>
+
+  <div id="map">
+  </div>
+  <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJsIhHD3VpArK1yVy4W80wrsPIM7UFklg&callback=initMap&libraries=&v=weekly"
+      async
+  ></script>
+
+</body>
+</html>
